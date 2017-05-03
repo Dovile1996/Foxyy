@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="302dp"
+        android:layout_height="188dp"
+        android:src="@drawable/bee" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_user" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="@string/login_pass" >
+        <requestFocus />
+    </EditText>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/prisijungti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login"
+        android:onClick="user_login"
+        />
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/registruotis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register"
+        android:onClick="user_register"
+        />
+</LinearLayout>
